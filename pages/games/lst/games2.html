@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Games List</title>
+<link rel="stylesheet" type="text/css" href="games.css" />
+<script type="text/javascript" src="games_list.js"></script>
+<script type="text/javascript" src="games2.js"></script>
+<script type="text/javascript">
+<!--
+
+   /*
+   */
+   var kount = 0;
+   var wanted = new Array();
+   
+   wanted[kount++] = new entry('Dance Dance Revolution Party Mix (Import)', 'ps2', 'konami', 'dance', false);
+   wanted[kount++] = new entry('Zettai Zetsumei Toshi 2 (import)', 'ps2', 'irem', 'adventure', false);
+   wanted[kount++] = new entry('In the Groove 2', 'ps2', 'red octane / roxor', 'dancing', false);
+   
+   wanted[kount++] = new entry('DDR Ultra Mix 3', 'xbox', 'konami', 'dancing', false);
+   
+   wanted[kount++] = new entry('Snatcher', 'scd', 'konami', 'adventure', true, 150);
+   
+   wanted[kount++] = new entry('Dragon Force', 'sat', 'working designs', 'strategy rpg', true, 80);
+   wanted[kount++] = new entry('Radiant Silvergun (Import)', 'sat', 'treasure', 'vertical shooter', true, 200);
+
+   wanted[kount++] = new entry('Children of Mana', 'nds', 'square enix', 'action rpg', false);
+   wanted[kount++] = new entry('ASH', 'nds', 'mystwalker', 'traditional rpg', false);
+   wanted[kount++] = new entry('Rune Factory', 'nds', 'marvelous', 'farming rpg', false);
+   wanted[kount++] = new entry('Elite Beat Agents', 'nds', 'nintendo', 'rhythm', false);
+   wanted[kount++] = new entry('Raid over River', 'nds', '??', 'shooter', false);
+   wanted[kount++] = new entry('Pokemon 4.5', 'nds', 'nintendo', 'rpg', false);
+   
+   wanted[kount++] = new entry('Dead Rising', 'x360', 'Capcom', 'mindless action', false);
+   wanted[kount++] = new entry('DDR Universe', 'x360', 'konami', 'dancing', false);
+   
+//-->
+</script>
+<script type="text/javascript">
+<!--
+
+	function centry(id, name, tag)
+	{
+		this.tag = tag;
+		this.id = id;
+		this.name = name;
+	}
+
+	var console = new Array();
+	var ccount = 0;
+	
+	//console[ccount++] = new centry('ps3', 'Playstation 3', ps3);
+	console[ccount++] = new centry('ps2', 'Playstation 2', ps2);
+	console[ccount++] = new centry('psp', 'Playstation Portable', psp);
+	console[ccount++] = new centry('psx', 'Playstation', psx);
+	
+	console[ccount++] = new centry('wii', 'Nintendo Wii', wii);
+	console[ccount++] = new centry('vc', 'Virtual Console', vc);
+	console[ccount++] = new centry('gc', 'Nintendo Gamecube', gc);
+	console[ccount++] = new centry('n64', 'Nintendo 64', n64);
+	console[ccount++] = new centry('snes', 'Super Nintendo', snes);
+	console[ccount++] = new centry('nes', 'Nintendo', nes);
+	
+	console[ccount++] = new centry('nds', 'Nintendo DS', nds);
+	console[ccount++] = new centry('gba', 'Gameboy Advance', gba);
+	console[ccount++] = new centry('gbc', 'Gameboy Color', gbc);
+	
+	console[ccount++] = new centry('dc', 'Sega Dreamcast', dc);
+	console[ccount++] = new centry('sat', 'Sega Saturn', sat);
+	console[ccount++] = new centry('scd', 'Sega CD', scd);
+	console[ccount++] = new centry('gen', 'Sega Genesis', gen);
+	
+	console[ccount++] = new centry('x360', 'Xbox 360', x360);
+	console[ccount++] = new centry('xbox', 'Xbox', xbox);
+
+//-->
+</script>
+<script type="text/javascript">
+<!--
+
+	var url = location.href.split('?');
+	var selected = url[1];
+	if(!selected)
+		selected = 'all';
+	
+	var type = url[2];
+	if(!type)
+		type = 'text';
+
+//-->
+</script>
+</head>
+<body>
+<div id="container">
+   <br />
+   <span id="title">
+		Games i own. (<script type="text/javascript"> document.write(count); </script>, give or take)
+		 ---   
+		<a href="sales.html">click for new additions</a>	
+   </span>
+   <div id="menu">
+      <script type="text/javascript"> menu(); </script>
+   </div>
+   <div id="content">
+      <script type="text/javascript"> content(); </script>
+   </div>
+</div>
+</body>
+</html>

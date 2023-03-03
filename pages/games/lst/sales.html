@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Monthly Game Purchased</title>
+<link rel="stylesheet" type="text/css" href="games.css" />
+<script type="text/javascript" src="games_list.js"></script>
+<script type="text/javascript" src="monthly.js"></script>
+<script type="text/javascript">
+<!--
+
+	var url = location.href.split('?');
+	var current_month = url[1];
+	if(!current_month)
+		current_month = games[count-1].purchase_date.getMonth();
+	
+	var current_year = url[2];
+	if(!current_year)
+		current_year = games[count-1].purchase_date.getFullYear();
+
+	var current_index = 0;
+
+//-->
+</script></head>
+<body>
+<div id="container">
+   <br />
+   <span id="title">
+		Games Purchased (<script type="text/javascript"> document.write(count); </script> and climbing)
+		 ---   
+		<a href="games2.html">click for full list of games</a>	
+   </span>
+   <div id="menu">
+      <script type="text/javascript"> menu(); </script>
+   </div>
+   <div id="content">
+      <script type="text/javascript"> content(); </script>
+   </div>
+</div>
+</body>
+</html>
