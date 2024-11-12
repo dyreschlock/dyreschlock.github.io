@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Wii Craziness</title>
+<style>
+body:		{ background-color: #CCC; font: arial 12px #000; }
+</style>
+<script type="text/javascript">
+
+	function updatedisplay()
+	{
+		//var remote = opera.wiiremote.update(0);
+		
+		//document.getElementById("content").innerHTML = remote.hold;
+		
+		for( var i = 0, remote, s = ''; i < 4; i++ )
+		{
+			remote = opera.wiiremote.update(i);
+			s += '<div id="list'+i+'"><h2>opera.wiiremote.update('+i+')<\/h2><dl>';
+			for( var k in remote )
+			{
+				s += '<dt>'+k+'<\/dt><dd>'+remote[k]+'<\/dd>';
+			}
+			s += '<\/dl><\/div>';
+		}
+		document.getElementsByTagName('div')[0].innerHTML = s;
+	}
+
+	window.onload = function ()
+	{
+		if( !window.opera || !opera.wiiremote )
+		{
+			document.getElementsByTagName('div')[0].innerHTML = 'Your browser does not appear to have any Wii remotes.';
+			return;
+		}
+		updatedisplay();
+		setInterval(updatedisplay,100);
+	};
+</script>
+</head>
+<body>
+hi there<br />
+<script type="text/javascript">
+	document.write(navigator.appName + " - " + navigator.appVersion);
+</script>
+
+<div id="content"></div>
+</body>
+</html>
