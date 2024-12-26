@@ -1,0 +1,192 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>One Piece - Devil's Fruit</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+	div		{ border: 1px solid #333; background-color: #ccc; width: 680px; font-size: 12px; font-family: arial; }
+	body	{ background-color: #ccc; }
+	td.top	{ border-top: 1px solid #c5c5c5; border-bottom: 1px solid #c5c5c5; }
+	td.mtop	{ border-top: 1px solid #999; border-bottom: 1px solid #c5c5c5; }
+	td.title { font-size: 10px; text-decoration: underline; }
+	hr		{ height: 1px; color: #999; }
+</style>
+<script type="text/javascript">
+
+	function entry(type, arc,kana,romaji,english,char,power)
+	{
+		this.kana = kana;
+		this.romaji = romaji;
+		this.english = english;
+		this.char = char;
+		this.power = power;
+		this.arc = arc;
+		this.type = type;
+	}
+	
+	var z = "zoan";
+	var p = "paramecia";
+	var l = "logia";
+	
+	var count = 0;
+	var fruit = new Array();
+	
+	fruit[count++] = new entry(p, 1,  '&#12468;&#12512; &#12293;',         'gomu gomu',   'Rubber',        'Luffy',               'Body becomes Rubber');
+	fruit[count++] = new entry(p, 3,  '&#12400;&#12425; &#12293;',         'bara bara',   'Separation',    'Captain Buggy',       'Body can Separate');
+	fruit[count++] = new entry(p, 10, '&#12377;&#12409; &#12293;',         'sube sube',   'Smooth',        'Alvida',              'Skin becomes Super Smooth');
+	fruit[count++] = new entry(l, 10, '&#12514;&#12463; &#12293;',         'moku moku',   'Cloud',         'Captain Smoker',      'Transform into Cloud');
+	fruit[count++] = new entry(l, 11, '&#12392;&#12429; &#12293;',         'toro toro',   'Liquid',        'Honey Queen',         'Transform into Liquid');
+	fruit[count++] = new entry(p, 11, '&#12363;&#12385; &#12293;',         'kachi kachi', 'Hard Steel',    'Bear King',           'Body becomes Hard as Steel');
+	fruit[count++] = new entry(p, 12, '&#12402;&#12381; &#12293;',         'hiso hiso',   'Whispering',    'Apis',                'Can understand Animals');
+	fruit[count++] = new entry(p, 12, '&#12363;&#12414; &#12293;',         'kama kama',   'Scythe',        'Eric the Whirlwind',  'Power of Slicing Wind');
+	fruit[count++] = new entry(p, 13, '&#12508;&#12531;&#12505; &#12293;', 'bomb bomb',   'Bomb',          'Mr. 5',               'Body/parts can Explode');
+	fruit[count++] = new entry(p, 13, '&#12461;&#12525; &#12293;',         'kilo kilo',   'Kilogram',      'Miss Valentine',      'Body can Change Weight');
+	fruit[count++] = new entry(p, 16, '&#12489;&#12523; &#12293;',         'doru doru',   'Candle',        'Mr. 3',               'Transform body/parts into Wax');
+	fruit[count++] = new entry(p, 17, '&#12400;&#12367; &#12293;',         'baku baku',   'Chew',          'Wapol',               'Can Eat and Transform Anything');
+	fruit[count++] = new entry(z, 17, '&#12358;&#12375; &#12293;',         'ushi ushi',   'Cow / Bison',   'Dalton',              'Transform into Bison');
+	fruit[count++] = new entry(z, 17, '&#12402;&#12392; &#12293;',         'hito hito',   'People',        'Chopper',             'Transform into Human');
+	fruit[count++] = new entry(p, 19, '&#12414;&#12397; &#12293;',         'mane mane',   'Copy',          'Bon Clay',            'Body/parts can copy appearances');
+	fruit[count++] = new entry(l, 19, '&#12417;&#12425; &#12293;',         'mera mera',   'Flame',         'Ace',                 'Power of Fire');
+	fruit[count++] = new entry(z, 19, '&#12392;&#12426; &#12293;',         'tori tori',   'Bird',          'Pell',                'Model: Falcom<br>Transform into Bird');
+	fruit[count++] = new entry(p, 19, '&#12399;&#12394; &#12293;',         'hana hana',   'Flower',        'Nico Robin',          'body/parts can "bloom" like a flower');
+	fruit[count++] = new entry(l, 19, '&#12377;&#12394; &#12293;',         'suna suna',   'Sand',          'Crocodile',           'Power of Sand');
+	fruit[count++] = new entry(z, 19, '&#12418;&#12368; &#12293;',         'mogu mogu',   'Mole',          'Miss MerryChristmas', 'Transform into Mole');
+	fruit[count++] = new entry(z, 19, '&#12356;&#12396; &#12293;',         'inu inu',     'Dog',           'Mr. 4\'s Gun',        'Model: Dachschund<br>Transform becomes Dog');
+	fruit[count++] = new entry(p, 19, '&#12473;&#12497; &#12293;',         'supa supa',   'Slicing',       'Mr. 1',               'Body becomes Steel<br>Transform body/parts into Blades');
+	fruit[count++] = new entry(p, 19, '&#12392;&#12370; &#12293;',         'toge toge',   'Thorn',         'Miss Doublefinger',   'Transform body/parts into Thorns');
+	fruit[count++] = new entry(z, 19, '&#12356;&#12396; &#12293;',         'inu inu',     'Dog',           'Chaka',               'Model: Jackal<br>Transform into Dog');
+    fruit[count++] = new entry(p, 20, '&#12362;&#12426; &#12293;',         'ori ori',     'Shackle',       'Hina',                'Transform Attacks into Shackles');
+
+	var ccount = 0;
+	var arc = new Array();
+	
+	arc[ccount++] = 'Episodes 1 : Luffy Intro';
+	arc[ccount++] = 'Episodes 2 - 3 : Zoro Intro';
+	arc[ccount++] = 'Episodes 4 - 8 : Captain Buggy';
+	arc[ccount++] = 'Episodes 9 - 17 : Ussop Story';
+	arc[ccount++] = 'Episodes 18 - 19 : Luffy & Zoro Story';
+	arc[ccount++] = 'Movie 1 : Legend of Woonan\'s Gold';
+	arc[ccount++] = 'Episodes 20 - 30 : Sanji Story';
+	arc[ccount++] = 'Episodes 31 - 44: Nami Story';
+	arc[ccount++] = 'Tv Special 1 - The Unexplored Region';
+	arc[ccount++] = 'Episodes 45 - 53 : Buggy & Rogue Town';
+	arc[ccount++] = 'Movie 2 : The Clockwork Island Adventure';
+	arc[ccount++] = 'Episodes 54 - 61 : Apis & Dragon\'s Nest';
+	arc[ccount++] = 'Episodes 62 - 63 : Laboon & Vivi Intro';
+	arc[ccount++] = 'Episodes 64 - 67 : Whiskey Peak';
+	arc[ccount++] = 'Episodes 68 - 69 : Coby Story';
+	arc[ccount++] = 'Episodes 70 - 78 : Little Garden';
+	arc[ccount++] = 'Episodes 79 - 91 : Chopper Story & Drum Kingdom';
+	arc[ccount++] = 'Movie 3 : Rare Monster Island, Chopper\'s Kingdom';
+	arc[ccount++] = 'Episodes 92 - 130 : Vivi & Alabasta';
+	arc[ccount++] = 'Episodes 131 - ? : ?';
+	arc[ccount++] = 'Movie 4 : Dead end Adventure';
+	arc[ccount++] = 'Movie 5 : Norowareta Seiken ';
+	
+	function music_entry(title,artist,eps)
+	{
+	   this.title = title;
+	   this.artist = artist;
+	   this.eps = eps;	   
+	}
+	
+	var open_count = 0;
+	var opening = new Array();
+	
+	opening[open_count++] = new music_entry("We Are~!",            'Hiroshi Kitadani',  '1-47');
+	opening[open_count++] = new music_entry("Believe",             'Folder 5',          '48-115');
+	opening[open_count++] = new music_entry("To the Light",        'Akihito Tanaka',    '116-?');
+	opening[open_count++] = new music_entry("Bon Voyage",          'Bon-Bon Blanco',    "?-?");
+	opening[open_count++] = new music_entry("Map of the Heart",    'Boystyle',          "?-?");
+	
+    var end_count = 0;
+	var ending = new Array();
+	
+	ending[end_count++] = new music_entry("Memories",                     'Otsuki Maki',      '1-30');
+	ending[end_count++] = new music_entry("Run Run Run",                  'Otsuki Maki',      '31-63');
+	ending[end_count++] = new music_entry("I\'m Here with You",           'Tomato Cube',      '64-73');
+	ending[end_count++] = new music_entry("Shouchi no Suke",              'Suitei Shoujo',    '74-81');
+	ending[end_count++] = new music_entry("Before Dawn",                  'Ai-Sachi',         '82-94');
+	ending[end_count++] = new music_entry("Fish",                         'The Kaleidoscope', '95-106');
+	ending[end_count++] = new music_entry('Glory - Because You\'re Here', 'Takako Uehara',    '107-118');
+	ending[end_count++] = new music_entry("Shining Ray",                  'Janne da Arc',     '119-?');
+	ending[end_count++] = new music_entry('Free Will',                    'Ruppina',          '?-?');
+	ending[end_count++] = new music_entry('Faith',                        'Ruppina',          '?-?');
+	ending[end_count++] = new music_entry('A to Z',                       'Sotaro / ZZ',      '?-?');
+	ending[end_count++] = new music_entry('The Moon and the Sun',         'Shela',            '?-?');
+	ending[end_count++] = new music_entry('Dreamship',                    'Ikuta Aiko',       '?-?');
+	ending[end_count++] = new music_entry('Mirai Koukai',                 '?',                '?-?');
+</script>
+</head>
+
+<body><center><div>
+	<br>
+	<table width="95%" cellspacing="2" cellpadding="2" border="0">
+		<tr align="center">
+			<td width="25%" colspan="2"><u>Japanese Name</u></td>
+			<td width="15%"><u>English</u></td>
+			<td width="25%"><u>Known Consumers</u></td>
+			<td><u>Type</u></td>
+			<td width="42%"><u>Powers</u></td>
+		</tr>
+		<script type="text/javascript">
+		
+			for(i=0; i < ccount; i++)
+			{
+				document.write('<tr>');
+				document.write('<td class="title" colspan="6"><i>' + arc[i] + '</i></td>');
+				document.write('</tr>');
+				
+				for(j=0; j < count; j++)
+				{
+					if(fruit[j].arc == (i+1))
+					{
+			   			document.write('<tr align="center">');
+			   			document.write('<td width="13%" class="top"><b>' + fruit[j].kana + '</b></td>');
+			   			document.write('<td width="14%" class="top">' + fruit[j].romaji + '</td>');
+			   			document.write('<td width="10%" class="top">' + fruit[j].english + '</td>');
+			   			document.write('<td class="top">' + fruit[j].char + '</td>');
+						document.write('<td class="top">' + fruit[j].type + '</td>');
+			   			document.write('<td width="45%" class="top">' + fruit[j].power + '</td>');
+			   			document.write('</tr>');
+					
+					}
+				}
+			}
+			
+            document.write('<tr align="center"><td colspan="6"><b>' + fruit.length + ' types through episode 132</b></td></tr>');
+		</script>
+	</table>
+	<br>
+	<table cellspacing="0" cellpadding="4" border="0" width="75%" align="center">
+	   <script type="text/javascript">
+	      
+		  document.write('<tr><td colspan="4"><hr></td></tr>');
+
+		  for(i=0; i < open_count; i++)
+		  {
+			 document.write('<tr align="center">');
+			 document.write('<td width="60%">"<u>' + opening[i].title + '</u>" by <i>' + opening[i].artist + '</i></td>');
+			 document.write('<td width="15%">opening ' + (i+1) + '</td>');
+			 document.write('<td width="25%" align="left">episodes ' + opening[i].eps + '</td>');
+	         document.write('</tr>');
+		  }
+
+		  document.write('<tr><td colspan="4"><hr></td></tr>');
+
+		  for(i=0; i < end_count; i++)
+		  {
+			 document.write('<tr align="center">');
+			 document.write('<td width="60%">"<u>' + ending[i].title + '</u>" by <i>' + ending[i].artist + '</i></td>');
+			 document.write('<td width="15%">ending ' + (i+1) + '</td>');
+			 document.write('<td width="25%" align="left">episodes ' + ending[i].eps + '</td>');
+	         document.write('</tr>');
+		  }
+		  
+		  document.write('<tr><td colspan="4"><hr></td></tr>');
+
+	   </script>
+	</table>
+</div></center></body>
+</html>

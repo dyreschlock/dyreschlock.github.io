@@ -1,0 +1,370 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Apatow Productions</title>
+
+<style type="text/css">
+body		{ font-family: arial; font-size: 12px; }
+#container	{ font-family: arial; font-size: 12px; }
+td			{ width: 120px; border-bottom: 1px solid #333; border-right: 1px solid #333; vertical-align: top; }
+font		{ font-size: 10px; }
+img			{ height: 100px; width: 100px; }
+#row0		{ background-color: #eee; }
+#row1		{ background-color:  #fff; }
+</style>
+
+<script type="text/javascript">
+
+function property(id, year)
+{
+	this.id = id;
+	this.year = year;
+}
+
+var freaks = "Freaks and Geeks";
+var undeclared = "Undeclared";
+var anchorman = "Anchorman";
+var virgin = "40 Year old Virgin";
+var knocked = "Knocked Up";
+var talladega = "Talladega Nights"; 
+var superbad = "Superbad";
+var walkhard = "Walk Hard";
+var pineapple = "Pineapple Express";
+var stepbros = "Step Brothers";
+var drillbit = "Drillbit Taylor";
+var marshall = "Forgetting Sarah Marshall";
+
+//var orange = "Orange County";
+//var kicking = "Kicking and Screaming";
+
+var show = new Array();
+var scount = 0;
+
+show[scount++] = new property(freaks, "1999-2000");
+show[scount++] = new property(undeclared, "2001-2002");
+show[scount++] = new property(anchorman, "2003");
+show[scount++] = new property(virgin, "2005");
+show[scount++] = new property(talladega, "2006");
+show[scount++] = new property(knocked, "2007");
+show[scount++] = new property(superbad, "2007");
+show[scount++] = new property(walkhard, "2007");
+show[scount++] = new property(pineapple, "2008");
+show[scount++] = new property(stepbros, "2008");
+show[scount++] = new property(drillbit, "2008");
+show[scount++] = new property(marshall, "2008");
+
+//show[scount++] = new property(orange, "2002");
+//show[scount++] = new property(kicking, "2005");
+
+function talent(first, last, show, character, role)
+{
+	this.first = first;
+	this.last = last;
+	this.show = show;
+	this.character = character;
+	this.role = role;
+}
+
+var actors = new Array();
+var count = 0;
+
+actors[count++] = new talent("Judd", "Apatow", freaks, "", "executive producer");
+actors[count++] = new talent("Judd", "Apatow", freaks, "", "writer, 5 episodes");
+actors[count++] = new talent("Judd", "Apatow", freaks, "", "director, 3 episodes");
+actors[count++] = new talent("Judd", "Apatow", undeclared, "", "executive producer");
+actors[count++] = new talent("Judd", "Apatow", undeclared, "", "writer, 17 episodes");
+actors[count++] = new talent("Judd", "Apatow", undeclared, "", "director, 2 episodes");
+actors[count++] = new talent("Judd", "Apatow", anchorman, "News Station Employee", "short");
+actors[count++] = new talent("Judd", "Apatow", anchorman, "", "producer");
+//actors[count++] = new talent("Judd", "Apatow", kicking, "", "executive producer");
+actors[count++] = new talent("Judd", "Apatow", virgin, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", virgin, "", "writer");
+actors[count++] = new talent("Judd", "Apatow", virgin, "", "director");
+actors[count++] = new talent("Judd", "Apatow", talladega, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", knocked, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", knocked, "", "writer");
+actors[count++] = new talent("Judd", "Apatow", knocked, "", "director");
+actors[count++] = new talent("Judd", "Apatow", superbad, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", walkhard, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", walkhard, "", "writer");
+actors[count++] = new talent("Judd", "Apatow", pineapple, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", pineapple, "", "story");
+actors[count++] = new talent("Judd", "Apatow", stepbros, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", drillbit, "", "producer");
+actors[count++] = new talent("Judd", "Apatow", marshall, "", "producer");
+
+actors[count++] = new talent("Paul", "Feig", freaks, "Alex the Guitarist", "guest star, 1 episode");
+actors[count++] = new talent("Paul", "Feig", freaks, "", "executive producer");
+actors[count++] = new talent("Paul", "Feig", freaks, "", "writer, 18 episodes");
+actors[count++] = new talent("Paul", "Feig", freaks, "", "director, 1 episode");
+actors[count++] = new talent("Paul", "Feig", undeclared, "", "director, 1 episode");
+actors[count++] = new talent("Paul", "Feig", knocked, "Fantasy Baseball Guy", "short");
+
+actors[count++] = new talent("Linda", "Cardellina", freaks, "Lindsey Weir", "main");
+
+actors[count++] = new talent("John Francis", "Daley", freaks, "Sam Weir", "main");
+
+actors[count++] = new talent("James", "Franco", freaks, "Daniel Desario", "supporting");
+actors[count++] = new talent("James", "Franco", knocked, "self", "cameo");
+actors[count++] = new talent("James", "Franco", pineapple, "??", "main");
+
+actors[count++] = new talent("Samm", "Levine", freaks, "Neal Schweiber", "supporting");
+actors[count++] = new talent("Samm", "Levine", undeclared, "Books", "guest star, 2 episodes");
+
+actors[count++] = new talent("Jason", "Segal", freaks, "Nick Andopolis", "supporting");
+actors[count++] = new talent("Jason", "Segal", undeclared, "Eric", "guest star, 7 episodes");
+actors[count++] = new talent("Jason", "Segal", knocked, "Jason", "supporting");
+actors[count++] = new talent("Jason", "Segal", marshall, "Peter Bretter", "main");
+actors[count++] = new talent("Jason", "Segal", marshall, "", "writer");
+
+actors[count++] = new talent("Martin", "Starr", freaks, "Bill Haverchuck", "supporting");
+actors[count++] = new talent("Martin", "Starr", undeclared, "??", "guest star, 1 episode");
+//actors[count++] = new talent("Martin", "Starr", kicking, "Beantown Customers", "short");
+actors[count++] = new talent("Martin", "Starr", knocked, "Martin", "supporting");
+actors[count++] = new talent("Martin", "Starr", superbad, "James Masselin", "short");
+
+actors[count++] = new talent("Busy", "Phillips", freaks, "Kim Kelly", "supporting");
+actors[count++] = new talent("Busy", "Phillips", undeclared, "Kelly", "guest star, 2 episodes");
+
+actors[count++] = new talent("Seth", "Rogen", freaks, "Ken Miller", "supporting");
+actors[count++] = new talent("Seth", "Rogen", undeclared, "Ron Garner", "supporting");
+actors[count++] = new talent("Seth", "Rogen", undeclared, "", "writer, 3 episodes");
+actors[count++] = new talent("Seth", "Rogen", anchorman, "Eager Cameraman", "short");
+actors[count++] = new talent("Seth", "Rogen", virgin, "Cal", "supporting");
+actors[count++] = new talent("Seth", "Rogen", virgin, "", "producer");
+actors[count++] = new talent("Seth", "Rogen", knocked, "Ben Stone", "main");
+actors[count++] = new talent("Seth", "Rogen", knocked, "", "producer");
+actors[count++] = new talent("Seth", "Rogen", superbad, "Officer Michaels", "supporting");
+actors[count++] = new talent("Seth", "Rogen", superbad, "", "writer");
+actors[count++] = new talent("Seth", "Rogen", superbad, "", "producer");
+actors[count++] = new talent("Seth", "Rogen", pineapple, "Dale Denton", "main"); //you, me and dupree
+actors[count++] = new talent("Seth", "Rogen", pineapple, "", "screenplay"); //anchorman
+actors[count++] = new talent("Seth", "Rogen", drillbit, "", "screenplay");
+actors[count++] = new talent("Seth", "Rogen", drillbit, "", "story");
+
+actors[count++] = new talent("Matthew", "McKane", freaks, "Mike Stevens", "guest star, 3 episodes");
+actors[count++] = new talent("Matthew", "McKane", undeclared, "Taint", "guest star, 5 episodes");
+actors[count++] = new talent("Matthew", "McKane", virgin, "Motorist", "short");
+actors[count++] = new talent("Matthew", "McKane", knocked, "Bartender", "short");
+actors[count++] = new talent("Matthew", "McKane", superbad, "Kane Cloverdale", "short");
+
+actors[count++] = new talent("Steve", "Bannos", freaks, "Frank Kowchevski", "guest star, 11 episodes");
+actors[count++] = new talent("Steve", "Bannos", undeclared, "Dingleberry", "guest star, 1 episode");
+actors[count++] = new talent("Steve", "Bannos", virgin, "Father at Restaurant", "short");
+actors[count++] = new talent("Steve", "Bannos", superbad, "Math Teacher", "short");
+actors[count++] = new talent("Steve", "Bannos", drillbit, "Computer Owner", "short");
+
+actors[count++] = new talent("Natasha", "Melnick", freaks, "Cindy Sanders", "guest star, 10 episodes");
+actors[count++] = new talent("Natasha", "Melnick", undeclared, "Jenni", "guest star, 2 episodes");
+
+actors[count++] = new talent("Joseph T.", "Mastrolia", freaks, "", "set costumer");
+actors[count++] = new talent("Joseph T.", "Mastrolia", undeclared, "", "set costumer");
+actors[count++] = new talent("Joseph T.", "Mastrolia", virgin, "Smart Tech Customer", "short");
+actors[count++] = new talent("Joseph T.", "Mastrolia", virgin, "", "costume supervisor"); //anchorman
+actors[count++] = new talent("Joseph T.", "Mastrolia", knocked, "Father in waiting Room", "short");
+actors[count++] = new talent("Joseph T.", "Mastrolia", knocked, "", "costume supervisor");
+
+actors[count++] = new talent("David", "Krumholtz", freaks, "Barry Schweiber", "guest star, 1 episode");
+actors[count++] = new talent("David", "Krumholtz", undeclared, "Greg", "geust star, 2 episodes");
+actors[count++] = new talent("David", "Krumholtz", superbad, "Benji Austin", "short");
+actors[count++] = new talent("David", "Krumholtz", walkhard, "??", "short");
+
+actors[count++] = new talent("Jay", "Baruchel", undeclared, "Steven Karp", "main");
+actors[count++] = new talent("Jay", "Baruchel", knocked, "Jay", "supporting");
+
+actors[count++] = new talent("Carla", "Gallo", undeclared, "Lizzie Exley", "main");
+actors[count++] = new talent("Carla", "Gallo", virgin, "Toe-sucking Girl", "short");
+actors[count++] = new talent("Carla", "Gallo", superbad, "Period Blood Girl", "short");
+actors[count++] = new talent("Carla", "Gallo", marshall, "Hi Girl", "short roll");
+
+actors[count++] = new talent("Charlie", "Hunnam", undeclared, "Lloyd Haythe", "supporting");
+
+actors[count++] = new talent("Monica", "Keena", undeclared, "Rachel Lindquist", "supporting"); //in orange county
+
+actors[count++] = new talent("Timm", "Sharp", undeclared, "Marshall Nesbitt", "suppoting");
+//actors[count++] = new talent("Timm", "Sharp", kicking, "Butcher Shop Employee", "short");
+
+actors[count++] = new talent("Loudon", "Wainwright III", undeclared, "Hal Karp", "supporting");
+actors[count++] = new talent("Loudon", "Wainwright III", virgin, "Priest", "short");
+actors[count++] = new talent("Loudon", "Wainwright III", knocked, "Dr. Howard", "short");
+actors[count++] = new talent("Loudon", "Wainwright III", knocked, "", "composer");
+
+actors[count++] = new talent("Gerry", "Bednob", undeclared, "Mr. Burundi", "guest star, 2 episodes");
+actors[count++] = new talent("Gerry", "Bednob", virgin, "Mooj", "supporting");
+
+actors[count++] = new talent("Will", "Ferill", undeclared, "Dave", "guest star, 1 episode");
+actors[count++] = new talent("Will", "Ferill", anchorman, "Ron Burgundy", "main");
+actors[count++] = new talent("Will", "Ferill", anchorman, "", "writer");
+//actors[count++] = new talent("Will", "Ferill", kicking, "Phil Weston", "main");
+actors[count++] = new talent("Will", "Ferill", talladega, "Ricky Bobby", "main");
+actors[count++] = new talent("Will", "Ferill", talladega, "", "executive producer");
+actors[count++] = new talent("Will", "Ferill", talladega, "", "writer");
+actors[count++] = new talent("Will", "Ferill", stepbros, "Brennan Huff", "main");
+actors[count++] = new talent("Will", "Ferill", stepbros, "", "writer");
+actors[count++] = new talent("Will", "Ferill", stepbros, "", "executive producer");
+
+actors[count++] = new talent("Andy", "McKay", anchorman, "Custodian", "short");
+actors[count++] = new talent("Andy", "McKay", anchorman, "", "director");
+actors[count++] = new talent("Andy", "McKay", anchorman, "", "writer");
+actors[count++] = new talent("Andy", "McKay", talladega, "Terry Cheveaux", "short");
+actors[count++] = new talent("Andy", "McKay", talladega, "", "director");
+actors[count++] = new talent("Andy", "McKay", talladega, "", "writer");
+actors[count++] = new talent("Andy", "McKay", talladega, "", "producer");
+actors[count++] = new talent("Andy", "McKay", stepbros, "", "director");
+actors[count++] = new talent("Andy", "McKay", stepbros, "", "writer");
+actors[count++] = new talent("Andy", "McKay", stepbros, "", "executive producer");
+
+actors[count++] = new talent("Christina", "Applegate", anchorman, "Veronica Corningstone", "main");
+
+actors[count++] = new talent("Steve", "Carell", anchorman, "Brick Tamland", "supporting");
+actors[count++] = new talent("Steve", "Carell", virgin, "Andy Stitzer", "main");
+actors[count++] = new talent("Steve", "Carell", virgin, "", "writer");
+actors[count++] = new talent("Steve", "Carell", virgin, "", "executive producer");
+actors[count++] = new talent("Steve", "Carell", knocked, "self", "cameo");
+
+actors[count++] = new talent("David", "Koechner", anchorman, "Champ Kind", "supporting");
+actors[count++] = new talent("David", "Koechner", virgin, "Dad at Clinic", "short");
+actors[count++] = new talent("David", "Koechner", talladega, "Herschell", "short");
+
+actors[count++] = new talent("Fred", "Willard", undeclared, "Proffesor Dugan", "guest star, 2 episodes");
+actors[count++] = new talent("Fred", "Willard", anchorman, "Ed Harken", "short");
+
+actors[count++] = new talent("Catherine", "Keener", virgin, "Trish", "main");
+
+actors[count++] = new talent("Paul", "Rudd", anchorman, "Brian Fantana", "supporting");
+actors[count++] = new talent("Paul", "Rudd", virgin, "David", "supporting");
+actors[count++] = new talent("Paul", "Rudd", knocked, "Pete", "supporting");
+actors[count++] = new talent("Paul", "Rudd", walkhard, "John Lennon", "");
+actors[count++] = new talent("Paul", "Rudd", marshall, "Surfing Instructor", "short");
+
+actors[count++] = new talent("Ian", "Roberts", anchorman, "Stage Manager", "short");
+actors[count++] = new talent("Ian", "Roberts", talladega, "Kyle", "supporting");
+actors[count++] = new talent("Ian", "Roberts", drillbit, "Jim", "");
+
+actors[count++] = new talent("Romany", "Malco", virgin, "Jay", "supporting");
+
+actors[count++] = new talent("Jane", "Lynch", virgin, "Paula", "supporting");
+actors[count++] = new talent("Jane", "Lynch", talladega, "Lucy Bobby", "supporting");
+
+actors[count++] = new talent("Erica Vittina", "Phillips", virgin, "Jill", "short");
+actors[count++] = new talent("Erica Vittina", "Phillips", superbad, "Liquor Store Clerk", "short");
+
+actors[count++] = new talent("Mo", "Collins", virgin, "Gina", "short");
+actors[count++] = new talent("Mo", "Collins", knocked, "Female Doctor", "short");
+
+actors[count++] = new talent("Charlie", "Hartsock", freaks, "Mr. Johnson", "short");
+actors[count++] = new talent("Charlie", "Hartsock", virgin, "Speed Dating MC", "short");
+actors[count++] = new talent("Charlie", "Hartsock", superbad, "Good Shopper Cashier", "short");
+
+actors[count++] = new talent("Brianna", "Brown", freaks, "Cheerleader", "short");
+actors[count++] = new talent("Brianna", "Brown", virgin, "Bar Girl", "short");
+actors[count++] = new talent("Brianna", "Brown", knocked, "Alison's Friend", "short");
+
+actors[count++] = new talent("Katherine", "Heigl", knocked, "Alison Scott", "main");
+
+actors[count++] = new talent("Leslie", "Mann", freaks, "Miss Foote", "guest star, 1 episode");
+actors[count++] = new talent("Leslie", "Mann", virgin, "Nicky (French Toast)", "short roll"); //stealing harvard
+actors[count++] = new talent("Leslie", "Mann", knocked, "Debbie", "supporting"); //orange country
+actors[count++] = new talent("Leslie", "Mann", drillbit, "??", "supporting");
+
+actors[count++] = new talent("Jonah", "Hill", virgin, "ebay Customer", "short");
+actors[count++] = new talent("Jonah", "Hill", knocked, "Jonah", "supporting");
+actors[count++] = new talent("Jonah", "Hill", superbad, "Seth", "main");
+actors[count++] = new talent("Jonah", "Hill", marshall, "??", "");
+
+actors[count++] = new talent("John C.", "Reilly", talladega, "Cal Naughton Jr", "supporting");
+actors[count++] = new talent("John C.", "Reilly", walkhard, "Dewey Cox", "main");
+actors[count++] = new talent("John C.", "Reilly", stepbros, "Dale Doback", "main");
+
+actors[count++] = new talent("Ken", "Jeong", knocked, "Dr. Kuni", "short");
+actors[count++] = new talent("Ken", "Jeong", pineapple, "Ken", "short");
+actors[count++] = new talent("Ken", "Jeong", stepbros, "Employment Agent", "short");
+
+actors[count++] = new talent("Michael", "Cera", superbad, "Evan", "main");
+
+actors[count++] = new talent("Christopher", "Mintz-Plasse", superbad, "Fogell / McLovin", "main");
+
+actors[count++] = new talent("Bill", "Hader", knocked, "Brent", "short");
+actors[count++] = new talent("Bill", "Hader", superbad, "Officer Slater", "supporting");
+actors[count++] = new talent("Bill", "Hader", pineapple, "Private Miller", ""); //walk hard
+actors[count++] = new talent("Bill", "Hader", marshall, "Brian", ""); //you, me, dupree
+
+actors[count++] = new talent("Kristen", "Wiig", knocked, "Jill", "short");
+actors[count++] = new talent("Kristen", "Wiig", marshall, "Prahna", ""); //walk hard
+
+</script>
+</head>
+<body><div id="container">
+<table border="0" cellpadding="4" cellspacing="0">
+	<tr>
+		<td>talent</td>
+		<script type="text/javascript">
+			
+			for(i = 0; i < scount; i++)
+			{
+				document.write("<td><b>" + show[i].id + "</b><br/>(" + show[i].year + ")</td>");
+			}
+						
+		</script>
+	</tr>
+<script type="text/javascript">
+
+	var row = 0;
+
+	for(i = 0; i < count; i++)
+	{
+		var row_id_name = 'row1';
+		if(row % 2 == 0)
+		{
+			row_id_name = 'row0';
+		}
+	
+		document.write("<tr id='" + row_id_name + "'>");
+		document.write("<td>" + actors[i].last + ", " + actors[i].first + "</td>");
+		
+		for(j = 0; j < scount; j++)
+		{
+			document.write("<td>");
+			
+			var done = false;
+			while(!done && actors[i].show == show[j].id)
+			{
+				if(actors[i].character != null && actors[i].character != "")
+				{
+					//document.write("<img src=''/>");
+					document.write(actors[i].character + "<br/><font>" + actors[i].role + "</font><br/>");
+				}
+				else
+				{
+					document.write("<font>" + actors[i].role + "</font><br/>");
+				}
+				
+				if(i+1 < count &&
+					(actors[i].first != actors[i+1].first ||
+					actors[i].last != actors[i+1].last))
+				{
+					done = true;
+				}
+				else if(i+1 >= count)
+				{
+					done = true;
+				}
+				else
+				{
+					i++
+				}
+			}
+			
+			document.write("</td>");
+		}
+		
+		document.write("</tr>");
+		row++;
+	}
+
+</script>
+</table>
+
+</div></body>
+</html>
