@@ -1,0 +1,10 @@
+website: https://theschlock.com/
+
+# Site Description
+description: One Schlock's Requiem is the personal website/blog  of Jim Hendricks. I'm a former Software Developer from Wisconsin, and now a Teacher of English living in central Japan.
+
+User-Agent: GPTBot
+User-Agent: ClaudeBot
+User-Agent: PerplexityBot
+User-agent: *
+Disallow: /
