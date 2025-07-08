@@ -1,0 +1,10 @@
+var script = document.createElement('script');
+script.charset = 'UTF-8';
+script.text = 'var _userPageInfo = [];';
+document.body.appendChild(script);
+script = document.createElement('script');
+script.charset = 'UTF-8';
+script.src = '\/\/static.fc2.com\/fc2web\/js\/fc2_web_user_page.js?20240214';
+script.defer = true;
+script.crossOrigin = 'anonymous';
+document.body.appendChild(script);
