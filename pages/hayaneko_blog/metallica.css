@@ -1,0 +1,176 @@
+@charset "euc-jp";
+
+.metallica_wrapper {
+	width:196px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/lovewindow_b.gif);
+	background-repeat:repeat-y;
+	padding:0;
+	margin:0;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+	font-size:80%;
+	text-align:left;
+}
+
+
+.metallica_title {
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/lovewindow_h.gif);
+	background-repeat:no-repeat;
+	width:196px;
+	height:18px;
+	cursor: move;
+	padding:3px 0 0 0;
+	margin:0;
+	clear:both;
+}
+
+.metallica_titlename {
+	width:104px;
+	height:13px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/lovewindow_title.gif);
+	background-repeat:no-repeat;
+	background-position:0px 2px;
+	float:left;
+}
+
+.metallica_wrapper img {
+	padding:0 !important;
+	float:left;
+}
+
+.metallica_close {
+	cursor: pointer;
+	float: right;
+	height:15px;
+	width:15px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_close.gif);
+	background-repeat:no-repeat;
+	padding: 2px 6px 0 0;
+	margin:0;
+}
+
+.lovers_wrapper {
+	width:196px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/lovewindow_b.gif);
+	background-repeat:repeat-y;
+	padding:6px 0 0 0;
+	margin:0;
+	z-index: 9999;
+}
+
+.metallica_iconbox {
+	clear:both;
+}
+
+.metallica_iconbox img {
+	padding: 0;
+	margin:0 10px 0 0;
+	border:1px solid #828282;
+}
+
+.yourface {
+	width:29px;
+	height:29px;
+	background-position:center center;
+	border:1px solid #828282;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+
+ul.lovers_iconArea {
+	margin:0;
+	padding:0;
+	clear:both;
+}
+
+
+.metallica_iconbox a {
+	color:#333 !important;
+	text-decoration:none !important;
+	background:none !important;
+}
+
+.metallica_iconbox a:hover {
+	text-decoration:underline !important;
+	background:none !important;
+}
+
+.metallica_iconbox p {
+	float:left !important;
+	padding:0 !important;
+	margin:0 !important;
+	line-height:14px !important;
+	font-family:¥á¥¤¥ê¥ª,Meiryo,'¥Ò¥é¥®¥Î³Ñ¥´ Pro W3','Hiragino Kaku Gothic Pro','£Í£Ó £Ð¥´¥·¥Ã¥¯',sans-serif !important;
+	font-size:12px !important;
+	color:#333 !important;
+	background:none !important;
+}
+
+.lovers_iconArea li {
+	margin: 0 0 6px 12px !important;
+	padding-left:0 !important;
+	border:0 !important;
+	display:block !important;
+	list-style:none !important;
+	list-style-image:none !important;
+	clear:both !important;
+	position:relative !important;
+	height:31px !important;
+	float:none !important;
+}
+
+
+.metallica_footer {
+	width:196px;
+	height:5px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/lovewindow_f.gif);
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+
+
+span.plan_plus_love {
+	width:16px;
+	height:16px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_plus.gif);
+	position:absolute;
+	left:21px;
+	top:-5px;
+}
+
+span.plan_30days_love {
+	width:16px;
+	height:16px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_30days.gif);
+	position:absolute;
+	left:21px;
+	top:-5px;
+}
+
+span.plan_lolipop_love {
+	width:16px;
+	height:16px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_lolipop.gif);
+	position:absolute;
+	left:21px;
+	top:-5px;
+}
+
+span.plan_goope_love {
+	width:16px;
+	height:16px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_goope.gif);
+	position:absolute;
+	left:21px;
+	top:-5px;
+}
+span.plan_cmsp_love {
+	width:16px;
+	height:16px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_cmsp.gif);
+	position:absolute;
+	left:21px;
+	top:-5px;
+}

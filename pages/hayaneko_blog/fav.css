@@ -1,0 +1,46 @@
+@charset "euc-jp";
+
+.fav_wrapper {
+	margin:0px 0px 0px 0px;
+	padding:0px;
+}
+
+.fav_add {
+	width:22px;
+	height:13px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/add_heart.gif);
+	background-repeat:no-repeat;
+	cursor:pointer;
+	float:left;
+}
+
+.fav_add a:hover {
+	width:22px;
+	height:13px;
+	background-color:#000000;
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.fav_add a {
+	color: #FFFFFF;
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.fav_popup {
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/add_bubble.gif);
+	background-repeat:no-repeat;
+	color:#FFFFFF;
+	cursor:pointer;
+	font-family:helvetica,arial;
+	font-size:11px;
+	height:13px;
+	width:38px;
+	text-align:center;
+	font-weight:bold;
+	margin-left:25px;
+	line-height:1.2em;
+}

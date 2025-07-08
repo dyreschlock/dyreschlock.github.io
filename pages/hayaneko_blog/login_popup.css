@@ -1,0 +1,126 @@
+@charset "euc-jp";
+
+.login_popup {
+	width:477px;
+	height:342px;
+	display: none;
+	position: absolute;
+	z-index: 9999;
+}
+
+.login_popup_header {
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_headerbg.gif);
+	background-repeat:no-repeat;
+	width:477px;
+	height:21px;
+	position:relative;
+	cursor: move;
+}
+
+.login_popup_titlename {
+	width:74px;
+	height:15px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_txt_h.gif);
+	background-repeat:no-repeat;
+	background-position:0px 2px;
+}
+
+
+.login_popup_header img {
+	position:absolute;
+	top:3px;
+}
+
+.login_popup_close {
+	width:15px;
+	height:15px;
+	position:absolute;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/love_close.gif);
+	background-repeat:no-repeat;
+	cursor: pointer;
+	left:456px;
+	top:3px;
+}
+
+.login_popup_wrapper {
+	height:321px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_bg.gif);
+	background-repeat:no-repeat;
+	padding-top:14px;
+}
+
+.login_popup_wrapper p {
+	text-indent:-9999px;
+	font-size:0px;
+}
+
+.login_popup_wrapper .login_popup_title {
+	width:164px;
+	height:27px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_txt_title.gif);
+	background-repeat:no-repeat;
+	margin:0px 0px 0px 155px;
+}
+
+.login_popup_wrapper .login_popup_description {
+	width:378px;
+	height:38px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_txt_love.gif);
+	background-repeat:no-repeat;
+	margin:0px 0px 0px 48px;
+}
+
+.login_popup_wrapper .login_popup_image {
+	width:378px;
+	height:85px;
+	margin:0px 0px 8px 48px;
+}
+
+.login_popup_wrapper .login_popup_image_sprite {
+	width:378px;
+	height:85px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_image_love.gif);
+	background-repeat:no-repeat;
+	margin:0px 0px 8px 48px;
+}
+
+
+.login_popup_wrapper a {
+	display: block;  
+	text-decoration: none !important; 
+	text-indent: -9999px;
+}
+
+
+
+
+.login_popup_wrapper a:hover {
+	background-position:left bottom;
+}
+
+
+
+
+.login_popup_wrapper .popup_btn_start {
+	width:251px;
+	height:39px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_btn_start.gif) !important;
+	background-repeat:no-repeat;
+	margin:0px 0px 0px 113px;
+}
+
+.login_popup_wrapper .login_popup_titlelogin {
+	width:380px;
+	height:26px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_txt_login.gif);
+	background-repeat:no-repeat;
+	margin:21px 0px 5px 46px;
+}
+
+.login_popup_wrapper .popup_btn_login {
+	width:221px;
+	height:39px;
+	background-image:url(https://imaging.jugem.jp/user_blog/love/images/popup_btn_login.gif) !important;
+	background-repeat:no-repeat;
+	margin:0px 0px 0px 128px;
+}

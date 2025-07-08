@@ -1,0 +1,322 @@
+@charset "euc-jp";
+
+/* リセット *******************************************************/
+* {
+	margin:0px;padding:0px;
+}
+html, body {
+	height: 100%;
+	margin:0px;
+}
+
+.wrapper  { 
+	height:100%; 
+	min-height:100%; 
+} 
+body > .wrapper  { 
+	height:auto; 
+}
+
+.body {
+	font-size:14px;
+	line-height:1.6em;
+	margin:0 auto;
+	background-repeat:repeat;  
+	background-image:url(https://imaging.jugem.jp/portal/dress/preview/bg/1679091c5a880faf6fb5e6087eb1b2dc.png);
+	background-color:;
+	background-attachment:fixed;
+	background-position:top center;
+}
+
+/* 全体レイアウト *******************************************************/
+.gmo_header {
+	position:relative;
+}
+.wrapper {
+	background:url(https://imaging.jugem.jp/portal/dress/blog/bg_shadow.png)
+	repeat-y scroll center top transparent;
+	margin:0 auto;
+	padding:0;
+	width:920px;
+}
+
+.header {
+	width:900px;
+	height:250px;
+	margin:0 auto;
+	background-color:#000;
+	background-image:url(https://imaging.jugem.jp/portal/dress/preview/header/06138bc5af6023646ede0e1f7c1eac75.jpg);
+}
+
+.content {
+	width:860px;
+	margin:0 auto;
+	background-color:#fff;
+	padding:20px;
+}
+
+.content a {
+	color:#333;
+}
+
+.content a:hover {
+	color:#999;
+}
+
+.content a:visited {
+	color:#999;
+}
+
+.main {
+	width:640px;
+	float:right;
+	background-color:#fff;
+}
+
+.side {
+	width:200px;
+	float:left;
+	background-color:#fff;
+}
+
+/* ヘッダー *******************************************************/
+.blog_title {
+	font-size:20px;
+	padding:95px 0 0 30px;
+}
+
+.blog_title a {
+	color:#000000;
+}
+
+.blog_description {
+	font-size:14px;
+	padding:10px 30px 0 30px;
+	line-height:1.6em;
+	color:#000000;
+}
+
+/* エントリー *******************************************************/
+.entry {
+	background-color:#fff;
+	margin-bottom:15px;
+	padding:10px;
+	background-color:#fff;
+}
+
+.entry_state_top {
+	list-style:none;
+	padding:0 0 5px 0;
+}
+
+.entry_state_top_list {
+	display:inline;
+	float:left;
+	border-left:1px solid #999;
+	padding:0 5px;
+}
+
+.entry_state_bottom {
+	list-style:none;
+	margin:30px 0;
+}
+
+.entry_state_bottom_list {
+	display:inline;
+	float:left;
+	border-left:1px solid #999;
+	padding:0 5px;
+	height:16px;
+}
+
+.entry_title {
+	font-size:16px;
+	line-height:1.6em;
+	padding:0 0 2px 0;
+}
+
+.entry_body blockquote {
+	border:1px dotted #CCCCCC;
+	margin:10px;
+    padding:10px;
+}
+
+.entry_body li {
+list-style-position:outside;
+margin:0 0 0 15px;
+}
+
+
+/* コメント *******************************************************/
+
+.comment {
+padding:10px;
+}
+
+.comment_title {
+	font-weight:bold;
+	border-bottom:1px solid #ddd;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+
+.comment_body {
+	font-size:12px;
+	line-height:1.6em
+}
+
+.comment_state {
+	text-align:right;
+	border-bottom:1px dotted #ddd;
+	padding-bottom:8px;
+	margin-bottom:8px;
+}
+
+.comment_state li {
+	font-size:10px;
+	list-style:none;
+	display:inline;
+	border-left: 1px solid #999;
+	padding:0 5px;
+}
+
+.comment_sendtitle {
+	font-weight:bold;
+	border-bottom:1px dotted #aaa;
+	padding:30px 0 5px 0;
+	margin-bottom:5px;
+}
+
+.comment_area .input {
+	border: 1px solid #CCCCCC;
+	margin: 0 0 6px;
+	padding: 3px;
+	width: 200px;
+}
+.comment_area .description {
+	border: 1px solid #CCCCCC;
+	margin: 0 0 10px;
+	padding: 3px;
+	width: 400px;
+}
+
+/* トラックバック *******************************************************/
+
+
+.trackback {
+padding:10px;
+}
+
+.trackback_URL {
+	font-weight:bold;
+	border-bottom:1px solid #ddd;
+	padding:30px 0 5px 0;
+	margin-bottom:5px;
+}
+
+.input_tb_URL {
+	border: 1px solid #CCCCCC;
+	margin: 0 0 6px;
+	padding: 3px;
+	width: 400px;
+}
+
+.trackback_title {
+	font-weight:bold;
+	border-bottom:1px solid #ddd;
+	padding:30px 0 5px 0;
+	margin-bottom:5px;
+}
+
+trackback_body {
+	font-size:12px;
+	line-height:1.6em
+}
+
+.trackback_state {
+	text-align:right;
+	border-bottom:1px dotted #ddd;
+	padding-bottom:5px;
+	margin-bottom:5px;
+}
+
+.trackback_state li {
+	font-size:10px;
+	list-style:none;
+	display:inline;
+	border-left: 1px solid #999;
+	padding:0 5px;
+}
+
+/* PAGETOP *******************************************************/
+
+.page_top {
+	text-align:right;
+	padding:15px 0;
+}
+
+/* PAGENAVI *******************************************************/
+
+.page_navi {
+	text-align:center;
+	padding:15px 0;
+}
+
+
+/* サイド *******************************************************/
+
+.side_title {
+	background:url(https://imaging.jugem.jp/portal/dress/preview/icon/4c5bde74a8f110656874902f07378009.gif) no-repeat scroll left center transparent;
+	padding-left:20px;
+}
+
+.side_contents li {
+	list-style:none;
+}
+
+.side_contents {
+	margin:0 0 15px 0;
+	padding:10px;
+	background-color:#fff;
+}
+
+.cell {
+	width: 27px;
+	text-align:center;
+	text-decoration:none;
+}
+
+/* フッター *******************************************************/
+.footer {
+	width:900px;
+	margin:0 auto;
+	text-align:center;
+}
+
+/* clear fix *******************************************************/
+.content:after,
+.entry_state_top:after,
+.entry_state_bottom:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+
+.content,
+.entry_state_top,
+.entry_state_bottom {
+  min-height: 1px;
+}
+
+* html .content,
+* html .entry_state_top,
+* html .entry_state_bottom {
+  height: 1px;
+  /**//*/
+  height: auto;
+  overflow: hidden;
+  /**/
+}
+
